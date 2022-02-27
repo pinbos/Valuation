@@ -6,7 +6,7 @@ from scipy.stats import gmean
 import numpy as np
 from numpy_financial import npv
 stockName = input('Enter a stock ticker: ')
-fd = FundamentalData(key='UO47CX25CF7FDJWX')
+fd = FundamentalData(key='ALPHAVANTAGE API KEY')
 data, meta_data = fd.get_company_overview(str(stockName))
 incomee, meta_datat = fd.get_income_statement_annual(str(stockName))
 income = incomee.fillna(0)
